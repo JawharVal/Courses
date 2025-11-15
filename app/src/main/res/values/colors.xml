@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_main">#050608</color>
+    <color name="input_bg">#262833</color>
+    <color name="bg_secondary">#2C2C2C</color>
+    <color name="green_primary">#00C853</color>
+    <color name="vk_blue">#0077FF</color>
+    <color name="ok_orange">#FF9100</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#8F97A3</color>
+</resources>

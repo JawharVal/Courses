@@ -1,0 +1,121 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/bg_secondary">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Course Image with rounded corners and Like button on the top-right -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:id="@+id/courseImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <!-- Like Button in top-right corner -->
+            <ImageView
+                android:id="@+id/btnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_input_get"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"/>
+        </RelativeLayout>
+
+        <!-- Course Title -->
+        <TextView
+            android:id="@+id/courseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Title"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <!-- Course Description -->
+        <TextView
+            android:id="@+id/courseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Footer with Rating, Date -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="8dp">
+
+            <!-- Course Rating -->
+            <TextView
+                android:id="@+id/courseRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.3"
+                android:textSize="14sp"
+                android:textColor="@color/green_primary"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Course Date -->
+            <TextView
+                android:id="@+id/courseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22 May 2024"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"/>
+        </LinearLayout>
+
+        <!-- Footer with Price on the left and "Подробнее" Button on the right -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:layout_marginTop="8dp">
+
+            <!-- Course Price aligned to the left -->
+            <TextView
+                android:id="@+id/coursePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 299 ₽"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:layout_weight="1" /> <!-- This pushes the "Подробнее" button to the right -->
+
+            <!-- "Подробнее" Button aligned to the right -->
+            <Button
+                android:id="@+id/btnDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Подробнее"
+                android:textColor="@color/green_primary" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
